@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+/* DOCUMENT - (normalizadores) */
+body { color:var(--black); font-family: var(--typo-text); background-color:var(--gray); margin: 0px;}
+h1, h2, h3, p { margin: 0px;}
+nav ul, nav ol, ul, ol { list-style: none; list-style-image: none;}
+dl, menu, ol, ul, li { margin: 0; padding: 0;}
+a { text-decoration: none;}
+.non-visible { display:none !important}
+
+/* COLOR */
+:root {
+    --typo-text:'Montserrat';
+    --typo-author:'Playfair Display';
+    --gray: #f2f2f2;
+    --green: #36403A;
+    --black: #000000;}
+
+/* PADDING */
+.padd { padding: 15px;}
+.padd-t-b { padding: 15px 0px;}
+.padd-r-l { padding: 0px 15px;}
+
+/* TEXT */
+.txt-S, .txt-S * { font-size: 0.8rem; font-weight: 400;}
+.txt-M, .txt-M * { font-size: 1.1rem; font-weight: 500;}
+.txt-L, .txt-L * { font-size: 1.4rem; font-weight: 500; font-family:var(--typo-author);}
+.txt-XL, .txt-XL * { font-size: 1.8rem;font-weight: 700;}
+
+/* FLEX */
+.flex { display: flex;}
+.flex-c { flex-direction: column;}
+.flex-s-b { justify-content: space-between;}
+.flex-a-i { align-items: center;}
+
+/* CONTENT*/
+
+/* Image Container */
+.image-container { width: 67vw;}
+.image img { width: 100%;}
+
+/* Info Container */
+.title { margin-bottom: 10px;}
+.title-container { margin-bottom: 20px;}
+.author { color: var(--green);}
+.tags-container { margin-bottom: 20px;}
+.tag { text-transform: uppercase; padding: 8px; background-color: var(--green); color: var(--gray); margin-right: 15px;
+        filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25) )}
+.quote { margin-bottom: 10px;}
+
+/* Button Container */
+.btn-container { padding: 0px;}
+.btn-container div { padding: 15px;}
+.btn { padding:13px 0px; background-color: var(--green); border-radius: 26px ; display:block; width:100%;
+        text-align: center; filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));letter-spacing: 0px;
+        word-spacing: 0px; border: solid 2px var(--green); color: var(--gray);}
